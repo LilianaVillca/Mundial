@@ -1,0 +1,55 @@
+button{
+    background-color: #b63f3f
+   }
+   .fifa1{
+       float: right;
+       width: 100px;
+       left: 170px;
+   }
+   .fifa1{
+   float: right;
+   width: 100px;
+   left: 170px;
+   }
+   .fifa2{
+   float: left;
+   width: 100px;
+   left: 170px;
+   }
+   h1{
+   text-align: center;
+   color: #b63f3f;
+   }
+   h2{
+       text-align: center;
+   }
+   .mostrar{
+       text-align: center;
+   }
+   .opciones{
+       text-align: left;
+       margin-left:50px;
+   }
+   .consultas{
+       margin-left:900px;
+       margin-right:200px;
+       margin-top:-620px;
+   }
+   #listar{
+       font-size: 15px;
+       line-height: 25px;
+       background-color: #b63f3f;
+       color:#fff;
+       -webkit-transition: all .3s ease;
+       -o-transition: all .3s ease;
+       transition: all .3s ease;
+   }
+   #ocultar{
+       font-size: 15px;
+       line-height: 25px;
+       background-color: #b63f3f;
+       color:#fff;
+       -webkit-transition: all .3s ease;
+       -o-transition: all .3s ease;
+       transition: all .3s ease;
+   }

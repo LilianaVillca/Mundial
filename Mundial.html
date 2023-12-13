@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Práctica Profesionalizante</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="functions.js"></script>
+    </head>
+    <body >
+        <img src="fifa.png" class="fifa1">
+        <img src="fifa.png" class="fifa2">
+        <h1> FIFA WORLD CUP QATAR 2022</h1>
+        <!-- Equipos , grupos , fechas , horas, estadio , eqipo contrario  -->
+        <h2>Listados de los mejore juradores de cada selección</h2>
+
+ 
+        <div class="mostrar">
+            <div id="salida"></div>
+            <button onclick = "listarTodo()" id="listar">Listar las fijuras del mundial</button><button onclick = "vectoresOcultos()" id="ocultar">Ocultar lista</button>
+        </div>
+        <hr>
+
+        <div class="opciones">
+        <h3> Menu de opciones </h3>
+        <p>
+            <label> 1- Odenar jugadores por edades: </label>
+            <button onclick="descendente()">Descendente</button>
+        </p> 
+        <p>
+            <label> 2- Odenar  jugadores por edades: </label>
+            <button onclick="ascendente()">Ascendente</button>
+        </p> 
+        <p>
+            <label> 3- Eliminar registro de un jugador : </label>
+            <input type=number id='nroElem'>
+            <button onclick = "eliminarUno()">Eliminar</button>
+        </p> 
+        <p>
+            <label> 4- Eliminar jugadores segun la opccion ingresada: </label>
+            <input type='checkbox' name='mundialistas' id='mundialistas'><label>Ultimo Mundial/Aun no</label>
+            <button onclick= "eliminarTodos()"> Eliminar </button>
+        </p>
+        <p>
+            <label> 5- Odenar jugadores por cantidad de goles: </label>
+            <button onclick="descendente2()">Descendente</button>
+        </p> 
+        <p>
+            <label> 6- Odenar jugadores por cantidad de goles: </label>
+            <button onclick="ascendente2()">Ascendente</button>
+        </p> 
+        <label> 7- Agregar jugadores : </label>
+        <p><label>Nombre:</label><input type='text' id='nombre'></p>
+        <p><label>&nbsp;Edad:</label><input type='number' id='edad'></p>
+        <p><label>&nbsp;Goles:</label><input type='number' id='goles'></p>
+        <p><label>&nbsp;Cantidad de partidos:</label><input type='number' id='partidosquelleva'></p>
+        <p><input type='checkbox' name='UntimoMundial' id='UntimoMundial'><label>Ultimo Mundial/Aun no</label> </p>   
+ 
+            <button onclick= "agregar()"> Agregar </button>
+        </div>
+        <br><br><br><br>
+        <div class="consultas">
+        <h3>Menu de consultas </h3>
+        <button onclick = "consulta1()">1- Quienes son los mayores 3 goleadores </button>
+        <div id="consulta1"></div><br>
+        <button onclick = "consulta2()">2- Quienes son los 3 jugadores con mayor cantidad de partidos</button>
+        <div id="consulta2"></div><br>
+        <button onclick = "consulta3()">3- Jugadores que juegan su ultima copa</button>
+        <div id="consulta3"></div><br>
+        <button onclick = "consulta4()">4- Jugadores que aun siguen en carrera</button>
+        <div id="consulta4"></div><br>
+        <button onclick = "consulta5()">5- promedio edad </button>
+        <div id="consulta5"></div><br>
+        </div><br>
+    </body>
+</html>
